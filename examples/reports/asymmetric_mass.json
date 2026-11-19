@@ -1,0 +1,50 @@
+{
+  "asset": "asymmetric_mass",
+  "status": "warn",
+  "stats": {
+    "vertices": 16,
+    "faces": 12,
+    "triangles": 24,
+    "surface_area_m2": 0.26099959332745093,
+    "min_edge_m": 0.03,
+    "max_edge_m": 1.0004498987955368,
+    "edges": 36,
+    "sharp_edges": 24,
+    "max_curvature_per_m": 0.0,
+    "bbox_min": [
+      -0.04000000000000001,
+      -0.04,
+      0.0
+    ],
+    "bbox_max": [
+      0.3022210925762524,
+      0.04,
+      1.1
+    ],
+    "extent_m": [
+      0.34222109257625244,
+      0.08,
+      1.1
+    ],
+    "watertight": true,
+    "volume_m3": 0.003637768740610022,
+    "center_of_mass": [
+      0.09867321998367118,
+      0.0,
+      0.9139275788826002
+    ],
+    "com_offset_ratio": 0.3308432535296365,
+    "index_format": "uint16",
+    "vram_bytes": 656
+  },
+  "findings": [
+    {
+      "check": "asymmetric_mass",
+      "severity": "warn",
+      "message": "center of mass is offset 33% of the extent from bbox center: pivots/physics will tip",
+      "count": 0,
+      "samples": []
+    }
+  ],
+  "timing_ms": 0.38320000749081373
+}

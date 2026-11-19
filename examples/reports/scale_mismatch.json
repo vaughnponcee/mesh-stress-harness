@@ -1,0 +1,57 @@
+{
+  "asset": "scale_mismatch",
+  "status": "fail",
+  "stats": {
+    "vertices": 48,
+    "faces": 36,
+    "triangles": 72,
+    "surface_area_m2": 12728.0,
+    "min_edge_m": 4.0,
+    "max_edge_m": 63.63961030678928,
+    "edges": 108,
+    "sharp_edges": 72,
+    "max_curvature_per_m": 0.0,
+    "bbox_min": [
+      -22.5,
+      -22.5,
+      0.0
+    ],
+    "bbox_max": [
+      22.5,
+      22.5,
+      92.5
+    ],
+    "extent_m": [
+      45.0,
+      45.0,
+      92.5
+    ],
+    "watertight": true,
+    "volume_m3": 21105.0,
+    "center_of_mass": [
+      0.0,
+      7.867803837953092,
+      51.52452025586354
+    ],
+    "com_offset_ratio": 0.1748400852878465,
+    "index_format": "uint16",
+    "vram_bytes": 1968
+  },
+  "findings": [
+    {
+      "check": "duplicate_vertices",
+      "severity": "info",
+      "message": "coincident vertices (unwelded seams)",
+      "count": 2,
+      "samples": []
+    },
+    {
+      "check": "scale_mismatch",
+      "severity": "error",
+      "message": "largest extent 92.5 m > 10 m; likely cm authored as m (x100)",
+      "count": 0,
+      "samples": []
+    }
+  ],
+  "timing_ms": 1.276700000744313
+}

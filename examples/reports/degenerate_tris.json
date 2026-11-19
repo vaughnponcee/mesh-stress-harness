@@ -1,0 +1,53 @@
+{
+  "asset": "degenerate_tris",
+  "status": "fail",
+  "stats": {
+    "vertices": 11,
+    "faces": 8,
+    "triangles": 14,
+    "surface_area_m2": 6.0,
+    "min_edge_m": 1.0,
+    "max_edge_m": 1.4142135623730951,
+    "edges": 18,
+    "sharp_edges": 12,
+    "max_curvature_per_m": 0.0,
+    "bbox_min": [
+      -0.5,
+      -0.5,
+      -0.5
+    ],
+    "bbox_max": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "extent_m": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "watertight": true,
+    "volume_m3": 1.0,
+    "center_of_mass": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "com_offset_ratio": 0.0,
+    "index_format": "uint16",
+    "vram_bytes": 436
+  },
+  "findings": [
+    {
+      "check": "degenerate_triangles",
+      "severity": "error",
+      "message": "zero-area or collapsed triangles",
+      "count": 2,
+      "samples": [
+        12,
+        13
+      ]
+    }
+  ],
+  "timing_ms": 0.26440000510774553
+}

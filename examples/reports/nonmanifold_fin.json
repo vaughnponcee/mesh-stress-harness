@@ -1,0 +1,64 @@
+{
+  "asset": "nonmanifold_fin",
+  "status": "fail",
+  "stats": {
+    "vertices": 9,
+    "faces": 7,
+    "triangles": 13,
+    "surface_area_m2": 6.430116263352131,
+    "min_edge_m": 0.8602325267042626,
+    "max_edge_m": 1.4142135623730951,
+    "edges": 20,
+    "sharp_edges": 11,
+    "max_curvature_per_m": 0.0,
+    "bbox_min": [
+      -0.5,
+      -0.5,
+      -0.5
+    ],
+    "bbox_max": [
+      1.0,
+      0.5,
+      1.2
+    ],
+    "extent_m": [
+      1.5,
+      1.0,
+      1.7
+    ],
+    "watertight": false,
+    "index_format": "uint16",
+    "vram_bytes": 366
+  },
+  "findings": [
+    {
+      "check": "non_manifold_edges",
+      "severity": "error",
+      "message": "edges shared by more than two faces",
+      "count": 1,
+      "samples": [
+        [
+          5,
+          7
+        ]
+      ]
+    },
+    {
+      "check": "boundary_edges",
+      "severity": "warn",
+      "message": "open edges: mesh is not watertight",
+      "count": 2,
+      "samples": [
+        [
+          5,
+          8
+        ],
+        [
+          7,
+          8
+        ]
+      ]
+    }
+  ],
+  "timing_ms": 0.475099979666993
+}

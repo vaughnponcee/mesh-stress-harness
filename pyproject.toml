@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "meshstress"
+version = "0.1.0"
+description = "Procedural stress-test geometry and mesh diagnostics (non-manifold, degenerate, scale, VRAM)"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+meshstress = "meshstress.cli:main"
+
+[tool.setuptools]
+packages = ["meshstress"]

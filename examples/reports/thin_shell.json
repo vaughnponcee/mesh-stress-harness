@@ -1,0 +1,70 @@
+{
+  "asset": "thin_shell",
+  "status": "warn",
+  "stats": {
+    "vertices": 8,
+    "faces": 6,
+    "triangles": 12,
+    "surface_area_m2": 2.002,
+    "min_edge_m": 0.0005,
+    "max_edge_m": 1.4142135623730951,
+    "edges": 18,
+    "sharp_edges": 12,
+    "max_curvature_per_m": 0.0,
+    "bbox_min": [
+      -0.5,
+      -0.5,
+      -0.00025
+    ],
+    "bbox_max": [
+      0.5,
+      0.5,
+      0.00025
+    ],
+    "extent_m": [
+      1.0,
+      1.0,
+      0.0005
+    ],
+    "watertight": true,
+    "volume_m3": 0.0005000000000000001,
+    "center_of_mass": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "com_offset_ratio": 0.0,
+    "index_format": "uint16",
+    "vram_bytes": 328
+  },
+  "findings": [
+    {
+      "check": "sliver_triangles",
+      "severity": "warn",
+      "message": "needle/sliver triangles (aspect > 50)",
+      "count": 8,
+      "samples": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "check": "thin_feature",
+      "severity": "warn",
+      "message": "thinnest axis is 0.05% of largest (0.5 mm): collision tunnelling / z-fighting risk",
+      "count": 0,
+      "samples": []
+    },
+    {
+      "check": "edge_length_range",
+      "severity": "warn",
+      "message": "edge lengths span 2828x; float precision risk",
+      "count": 0,
+      "samples": []
+    }
+  ],
+  "timing_ms": 0.6250999867916107
+}

@@ -1,0 +1,50 @@
+{
+  "asset": "high_curvature_joint",
+  "status": "warn",
+  "stats": {
+    "vertices": 2304,
+    "faces": 2304,
+    "triangles": 4608,
+    "surface_area_m2": 0.059022315571344186,
+    "min_edge_m": 0.0007831571533201831,
+    "max_edge_m": 0.03292136899208619,
+    "edges": 6912,
+    "sharp_edges": 0,
+    "max_curvature_per_m": 506.2965046799702,
+    "bbox_min": [
+      -0.503,
+      -0.503,
+      -0.003
+    ],
+    "bbox_max": [
+      0.503,
+      0.503,
+      0.003
+    ],
+    "extent_m": [
+      1.006,
+      1.006,
+      0.006
+    ],
+    "watertight": true,
+    "volume_m3": 8.775255115385884e-05,
+    "center_of_mass": [
+      1.2065645615378968e-16,
+      2.893241271521082e-16,
+      -8.409817835823387e-18
+    ],
+    "com_offset_ratio": 1.4016363059705645e-15,
+    "index_format": "uint16",
+    "vram_bytes": 101376
+  },
+  "findings": [
+    {
+      "check": "high_curvature",
+      "severity": "warn",
+      "message": "smallest bend radius ~2 mm (< 5 mm): normal/LOD artifacts, unstable collision hulls",
+      "count": 0,
+      "samples": []
+    }
+  ],
+  "timing_ms": 93.52310001850128
+}
